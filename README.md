@@ -1,2 +1,4 @@
-My resume. Easier than keeping it in a Google Drive.
+# Preview
+
+![PDF resume](preview.png)
 
