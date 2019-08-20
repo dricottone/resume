@@ -5,6 +5,8 @@
 \usepackage{multicol} % for contact info
 \usepackage{enumitem} % for indented descriptions
 \usepackage{setspace} % for doublespacing
+\usepackage{hyperref}
+\urlstyle{same} % hyperref default is to show URLs in mono font
 
 \newenvironment{details}{
 \begin{itemize}[label={}]
@@ -20,7 +22,7 @@
 \begin{multicols}{2}
 4750 Chevy Chase Dr., Apt. 209 \\
 Chevy Chase, Maryland 20815 \\
-Contact at: me@dominic-ricottone.com \\
+Contact at: \href{mailto:me@dominic-ricottone.com}{me@dominic-ricottone.com} \\
 (716) 548 6305
 \end{multicols}
 

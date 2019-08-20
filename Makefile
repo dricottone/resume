@@ -6,7 +6,7 @@ pdf-open: pdf
 	mupdf document.pdf
 
 clean:
-	rm -f document.aux document.log preview.png
+	rm -f document.aux document.log document.out preview.png
 
 delete:
 	rm document.pdf
