@@ -1,113 +1,126 @@
 \documentclass[12pt]{article}
-\usepackage[letterpaper, total={7.5in,10in}, centering]{geometry}
-\pagenumbering{gobble} % suppresses pagination
-\setlength{\parindent}{0pt} % suppressed paragraph indent
-\usepackage{multicol} % for contact info
-\usepackage{enumitem} % for indented descriptions
-\usepackage{setspace} % for doublespacing
-\usepackage{hyperref}
-\urlstyle{same} % hyperref default is to show URLs in mono font
 
+% margins
+\usepackage[letterpaper, total={7.5in,10in}, centering]{geometry}
+
+% embedded hyperlnks
+\usepackage{hyperref}
+\urlstyle{same}
+
+% double-spaced lines
+\usepackage{setspace}
+
+% suppress pagination
+\pagenumbering{gobble}
+
+% suppress paragraph indentation
+\setlength{\parindent}{0pt}
+
+% columns
+\usepackage{multicol}
+
+% custom environments
+\newenvironment{name}{
+  \begin{center} \huge \bfseries
+}{
+  \end{center} \normalsize
+}
+
+\usepackage{fontawesome}
+\newenvironment{contact}{
+  \begin{multicols}{2} \footnotesize
+}{
+  \end{multicols}
+}
+
+\newenvironment{division}{
+  \vspace{.1in} \large \bfseries
+}{
+  \hrulefill \normalsize \vspace{.1in}
+}
+
+\usepackage{enumitem}
 \newenvironment{details}{
-\begin{itemize}[label={}]
-	\small \setlength{\itemsep}{0pt}
-}{\end{itemize}}
+  \begin{itemize}[label={}] \small \setlength{\itemsep}{0pt}
+}{
+  \end{itemize} \normalsize
+}
 
 \begin{document}
 
-\centering \Huge
-\textbf{Dominic Ricottone}
+\begin{name}
+  Dominic Ricottone
+\end{name}
 
-\footnotesize
-\begin{multicols}{2}
-4750 Chevy Chase Dr., Apt. 209 \\
-Chevy Chase, Maryland 20815 \\
-Contact at: \href{mailto:me@dominic-ricottone.com}{me@dominic-ricottone.com} \\
-(716) 548 6305
-\end{multicols}
+\begin{contact}
+  \begin{center}
+  4750 Chevy Chase Dr., Apt. 209 \\
+  Chevy Chase, Maryland 20815 \\
+  \end{center}
+  \columnbreak
+  \faCloud \quad    \href{https://www.dominic-ricottone.com}{www.dominic-ricottone.com} \\
+  \faEnvelope \quad \href{mailto:me@dominic-ricottone.com}{me@dominic-ricottone.com} \\
+  \faPhone \quad    (716) 548 6305
+\end{contact}
 
-\vspace{.1in}
-\normalsize
 \begin{flushleft}
-Over two years experience in survey research operations. Trained in econometric 
-analysis and statistical methods. My work includes NIST's study on the Chimney 
-Tops 2 fire in Tennessee, and FVAP's post-election survey of overseas citizens. 
-I have an ongoing application for Tier 3 Security Clearance.
+  Three years experience in survey research operations.
+  Training in econometric analysis and qualitative methods.
+  Self-trained programmer and systems administrator.
+  Proficient in diverse set of programming languages and statistical softwares.
 \end{flushleft}
 
-\vspace{.1in}
-\large
-\textbf{Experience} \hrulefill
-\vspace{.05in}
+\begin{division}
+  Experience
+\end{division}
 
-\normalsize
 \textbf{Data Management Analyst} at Fors Marsh Group \hfill \textit{February 2019 -- present}
 \begin{details}
- 	\item Cleaning and processing large (1M+) sample files for use in mailing campaigns
-	\item Validating multi-modal survey instruments and datasets with SPSS, Stata, and Python
-	\item Managing protection of Personally Identifiable Information (PII) to comply with federal and IRB regulations
+  \item Cleaning and processing large (1M+) sample files, including international addresses
+  \item Validating multi-modal survey instruments and data with SPSS, Stata, and Python
+  \item Integrating web portals and backend databases through Python, R, SPSS, and Microsoft Access SQL
+  \item Managing protection of PII and PHI
 \end{details}
 
-\normalsize
 \textbf{Junior Survey Programmer} at The Harris Poll \hfill \textit{November 2018 -- February 2019}
 \begin{details}
- 	\item Programming web surveys with the Decipher platform
+  \item Programming web surveys with the Decipher platform
 \end{details}
 
-\normalsize
 \textbf{Junior Data Processing Programmer} at The Harris Poll \hfill \textit{September 2017 --- November 2018}
 \begin{details}
-	\item Validating web surveys and datasets with Quantum, SPSS, and Python
- 	\item Raking data to generate survey weights
-	\item Maintaining internal production software and servers
+  \item Validating web survey instruments and data with SPSS and Quantum
+  \item Raking data to generate survey weights
+  \item Development of automation, especially syntax generation, through Python and Perl
+  \item Maintaining production software and Linux servers
 \end{details}
 
-\normalsize
 \textbf{Campaign Finance Intern} at Chris Harris \& Associates, LLC \hfill \textit{July 2017 --- September 2017}
 \begin{details}
-	\item Aggregating data from internal operations into actionable mailing lists
-	\item Scraping political contribution data from government web pages and PDF filings
-	\item Organizing fundraisers for elected official including Sheriff Baxter and the late Congresswoman Slaughter
+  \item Aggregating data from internal operations and external databases into actionable samples
+  \item Scraping contributions disclosures from government websites and PDF filings
+  \item Organizing fundraisers for elected officials across Western New York region
 \end{details}
 
-\normalsize
-\textbf{Office Assistant} at Human Resources Dept., U Rochester  \hfill \textit{June 2016 --- May 2017}
-\begin{details}
-	\item Maintaining primary copies of employment records
-	\item Managed internal circulation of sensitive employment records
-\end{details}
+\begin{division}
+  Education
+\end{division}
 
-\normalsize
-\textbf{Research Assistant} at Cancer Care of Western New York  \hfill \textit{May 2013 --- August 2013}
-\begin{details}
-	\item Researched the academic literature on penile melanoma for a case report
-	\item Data entry from patient records into the internal database
-	\item Scrubbed PII from records to be used in external research
-\end{details}
-
-\vspace{.1in}
-\large
-\textbf{Education} \hrulefill
-
-\vspace{.05in}
-\normalsize
 \textbf{B.A. in Political Science, Economics} from U Rochester \hfill \textit{August 2013 --- May 2017}
 
-\vspace{.05in}
-\normalsize
 \textbf{Intensive Japanese Language Program} at Nanzan University \hfill \textit{January 2016 --- May 2016}
 
-\vspace{.1in}
-\large
-\textbf{Technical Skills} \hrulefill
+\vspace{.05in} %the enumitem adds some vertical spacing for other divisions
+\begin{division}
+  Technical Skills
+\end{division}
 
-\normalsize
 \begin{details}
-	\item Proficiency with statistical software including SPSS, STATA, R, SQL, Tableau, and Quantum
-	\item Proficiency with scripting and automation languages including Python, \LaTeX, Bash, and VBA
-	\item Experienced in programming languages including C, Rust, and Go--especially for XML/HTML parsing
-	\item Experienced in web programming languages, including JavaScript and jQuery
-	\item Experienced in Linux server administration, including Amazon AWS
+  \item Proficiency with statistical softwares including SPSS and Stata. Some experience with SAS and Tableau.
+  \item Proficiency with diverse set of compiled, scripting, and web programming languages; with a demonstrated ability to rapidly learn new languages on-the-job.
+  \item Experience deploying applications with external teams as the end-user.
+  \item Experience in server administration (esp. Linux), including experience in cloud infrastructure (AWS) and containerization (Docker).
+  \item Working with structured (XML, JSON, etc.) and unstructured (PDF and web scraping) data.
 \end{details}
 
 \end{document}
