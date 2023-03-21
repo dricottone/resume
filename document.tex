@@ -26,26 +26,15 @@
 % icons
 \usepackage{fontawesome}
 
+% lists
+\usepackage{enumitem}
+\setitemize{itemsep=0pt,parsep=0pt,partopsep=0pt}
+
 % colored background
 \usepackage[dvipsnames]{xcolor}
 \usepackage{mdframed}
 \usepackage[most]{tcolorbox}
 \tcbset{on line,left=3pt,right=3pt,top=2pt,bottom=2pt,colback=Salmon,frame empty}
-
-% custom environments
-\usepackage{enumitem}
-%\setitemize{itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
-\setitemize{itemsep=0pt,parsep=0pt,partopsep=0pt}
-\newenvironment{details}{
-  \begin{itemize}[]
-}{
-  \end{itemize}
-}
-%\newenvironment{details}{
-%  \begin{itemize}[label={}] \small \setlength{\itemsep}{0pt}
-%}{
-%  \end{itemize} \normalsize
-%}
 
 \begin{document}
 \begin{vwcol}[widths={0.65,0.35},justify=flush,rule=0pt]
@@ -58,8 +47,6 @@
 5 years experience in survey research including data collection, cleaning, and weighting.
 Proficiencies in SPSS, Stata, and Python.
 
-%\noindent \makebox[1.5em]{\faicon{map-marker}} 444 W Diversey Pkwy,\\
-%\makebox[1.5em]{\strut} Chicago, IL 60614
 \noindent \makebox[1.5em]{\faicon{map-marker}} Chicago, Illinois
 
 \vspace{.5em}
@@ -75,7 +62,6 @@ Proficiencies in SPSS, Stata, and Python.
 \normalsize
 
 \vspace{.5em}
-%\noindent
 \tcbox{\strut SPSS}
 \tcbox{\strut Stata}
 \tcbox{\strut R}
@@ -83,7 +69,6 @@ Proficiencies in SPSS, Stata, and Python.
 \tcbox{\strut Text Scraping}
 \tcbox{\strut Data Pipelines}
 
-%\noindent
 \tcbox{\strut Survey Programming}
 \tcbox{\strut Python}
 \tcbox{\strut Golang}
