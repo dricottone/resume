@@ -7,21 +7,8 @@
 \usepackage[hidelinks]{hyperref}
 \urlstyle{same}
 
-% double-spaced lines
-%\usepackage{setspace}
-%\doublespacing
-
 % suppress pagination
 \pagenumbering{gobble}
-
-% suppress paragraph indentation
-%\setlength{\parindent}{0pt}
-
-% equal-width columns
-\usepackage{multicol}
-
-% variable-width columns
-\usepackage{vwcol}
 
 % icons
 \usepackage{fontawesome}
@@ -30,64 +17,46 @@
 \usepackage{enumitem}
 \setitemize{itemsep=0pt,parsep=0pt,partopsep=0pt}
 
-% colored background
-\usepackage[dvipsnames]{xcolor}
-\usepackage{mdframed}
-\usepackage[most]{tcolorbox}
-\tcbset{on line,left=3pt,right=3pt,top=2pt,bottom=2pt,colback=Salmon,frame empty}
-
 \begin{document}
-\begin{vwcol}[widths={0.65,0.35},justify=flush,rule=0pt]
-\Huge
-\noindent \textbf{Dominic Ricottone}
-\normalsize
 
+
+
+\centering
+{\textbf{\Huge Dominic Ricottone}}
+
+
+
+\raggedright
 \vspace{.5em}
-\noindent
-5 years experience in survey research including data collection, cleaning, and weighting.
-Proficiencies in SPSS, Stata, and Python.
+Over 5 years of experience in \textbf{survey research}
+including data collection, cleaning, and weighting.
+I am proficient in \textbf{statistical programming and analysis} especially with
+\textbf{SPSS}, \textbf{Stata}, and \textbf{Python}.
+A selection of my hobby projects can be found at
+\faicon{github} \href{https://github.com/dricottone}{github.com/dricottone}.
 
-\noindent \makebox[1.5em]{\faicon{map-marker}} Chicago, Illinois
 
+
+\centering
 \vspace{.5em}
-\noindent \makebox[1.5em]{\faicon{envelope}} \href{mailto:me@dominic-ricottone.com}{me@dominic-ricottone.com}
+\faicon{map-marker} Chicago, Illinois
+\enspace
+\faicon{envelope} \href{mailto:me@dominic-ricottone.com}{me@dominic-ricottone.com}
+\enspace
+\faicon{cloud} \href{https://www.dominic-ricottone.com}{dominic-ricottone.com}
+\enspace
+\faicon{phone} 716.548.6305
 
-\vspace{.5em}
-\noindent \makebox[1.5em]{\faicon{phone}} 716.548.6305
-\end{vwcol}
 
-\vspace{.5em}
-\large
-\noindent \textbf{Skills} \hrulefill
-\normalsize
 
-\vspace{.5em}
-\tcbox{\strut SPSS}
-\tcbox{\strut Stata}
-\tcbox{\strut R}
-\tcbox{\strut Survey Weight Calibration/Raking}
-\tcbox{\strut Text Scraping}
-\tcbox{\strut Data Pipelines}
-
-\tcbox{\strut Survey Programming}
-\tcbox{\strut Python}
-\tcbox{\strut Golang}
-\tcbox{\strut SAS}
-\tcbox{\strut SQL}
-\tcbox{\strut Tableau}
-\tcbox{\strut Excel VBA}
-\tcbox{\strut \LaTeX}
-\vspace{1em}
-
-\large
-\noindent \textbf{Experience} \hrulefill
-\normalsize
+\raggedright
+\vspace{.75em}
+\textbf{\Large Work Experience} \hrulefill
 \vspace{.5em}
 
-\noindent \textbf{Data Management Analyst 2} at Fors Marsh Group \hfill \textit{September 2020 --- Present}
-\vspace{.5em}
-
-\noindent \textbf{Data Management Analyst 1} \hfill \textit{February 2019 --- September 2020}
+\textbf{Data Management Analyst 2} \hfill \textit{September 2020 --- Present}
+\par \textbf{Data Management Analyst 1} \hfill \textit{February 2019 --- September 2020}
+\par Fors Marsh, \textit{Arlington, Virginia (working remote)}
 \begin{itemize}[]
 \item Cleaning large (1M+) survey samples with international addresses using SPSS, Stata, and Python
 \item Weighting survey data to mitigate design effects and non-response bias using Stata
@@ -96,12 +65,14 @@ Proficiencies in SPSS, Stata, and Python.
 \item Reviewing and quality assurance testing of junior analysts' work
 \end{itemize}
 
-\noindent \textbf{Junior Survey Programmer} at The Harris Poll \hfill \textit{November 2018 --- February 2019}
+\textbf{Junior Survey Programmer} \hfill \textit{November 2018 --- February 2019}
+\par The Harris Poll, \textit{Rochester, New York}
 \begin{itemize}[]
 \item Programming web surveys using Decipher
 \end{itemize}
 
-\noindent \textbf{Junior Data Processing Programmer} at The Harris Poll \hfill \textit{September 2017 --- November 2018}
+\textbf{Junior Data Processing Programmer} \hfill \textit{September 2017 --- November 2018}
+\par The Harris Poll, \textit{Rochester, New York}
 \begin{itemize}[]
 \item Automating data pipelines with unsupervised ingestion through POP3 and RESTful APIs
 \item Weighting longitudinal and stratified survey data for rolling-window B2C analysis using Quantum
@@ -109,53 +80,55 @@ Proficiencies in SPSS, Stata, and Python.
 \item Scripting quality assurance processes with Bash, Python, and Perl
 \end{itemize}
 
-\noindent \textbf{Campaign Finance Intern} at Chris Harris \& Associates, LLC \hfill \textit{July 2017 --- September 2017}
-\begin{itemize}[]
-\item Scraping contributions disclosures from web pages and PDF documents using Python
-\item Canvassing and organizing fundraisers for elected officials across Western New York region
-\end{itemize}
 
-\large
-\noindent \textbf{Education} \hrulefill
-\normalsize
 
-\begin{multicols}{2}[]
-\noindent \textbf{B.A. in Political Science, Economics} \par
-University of Rochester, \textit{Rochester, NY} \par
-August 2013 --- May 2017
+\vspace{.5em}
+\textbf{\Large Education} \hrulefill
+\vspace{.5em}
 
-\noindent \textbf{Intensive Japanese Language Program} \par
-Nanzan University, \textit{Nagoya, Japan} \par
-January 2016 --- May 2016
-\end{multicols}
+\textbf{B.A. in Political Science, Economics} \hfill \textit{2013 --- 2017}
+\par University of Rochester, \textit{Rochester, New York}
 
-\large
-\noindent \textbf{Certifications and Awards} \hrulefill
-\normalsize
+\vspace{.25em}
+\textbf{Intensive Japanese Language Program} \hfill \textit{2016}
+\par Nanzan University, \textit{Nagoya, Japan}
 
-\begin{multicols}{2}[]
-\noindent \textbf{FMG 2022 Core Values Certificate} \par
-September 2022
 
-\noindent \textbf{CITI Biomedical Research Support Staff} \par
-February 2022
 
-\noindent \textbf{SAS Programming 1: Essentials} \par
-November 2019
+\vspace{.75em}
+\textbf{\Large Certifications and Awards} \hrulefill
+\vspace{.5em}
 
-\vfill\null
+\textbf{Identifying and Safeguarding Personally Identifiable Information} \hfill \textit{March 2023}
+\par U.S. Department of Defense Cyber Exchange
 
-\end{multicols}
+\vspace{.25em}
+\textbf{Core Values Certificate} \hfill \textit{September 2022}
+\par Fors Marsh
 
-\vfill
-\begin{mdframed}[hidealllines=true,backgroundcolor=Salmon]
-\footnotesize \centering
-\faicon{cloud} \enspace \href{https://www.dominic-ricottone.com}{dominic-ricottone.com}
-\quad
-\faicon{github} \enspace \href{https://github.com/dricottone}{github.com/dricottone}
-\quad
-\faicon{linkedin} \enspace \href{https://www.linkedin.com/in/dominicricottone}{linkedin.com/in/dominicricottone}
-\end{mdframed}
+\vspace{.25em}
+\textbf{Biomedical Research Support Staff} \hfill \textit{February 2022}
+\par CITI Program
+
+\vspace{.25em}
+\textbf{SAS Programming 1: Essentials} \hfill \textit{November 2019}
+\par SAS Institute
+
+
+
+\vspace{.75em}
+\textbf{\Large Skills} \hrulefill
+\vspace{.5em}
+
+Rapid development of data solutions on a collaborative team.
+
+\vspace{.25em}
+Rigorous data governance and quality assurance processes.
+
+\vspace{.25em}
+Automation of key deliverables and continuous data ingestion.
+
+
 
 \end{document}
 
